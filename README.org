@@ -1,0 +1,38 @@
+* Introduction
+
+terraform provides a way to speed up the process of conquering a new machine.
+
+It assumes you have many files, folders and applications that you use and would like to add to a familiar location.
+
+* Description
+ 
+`terraform.py` performs all the steps necessary to place all your file where they should be.
+
+It looks at `seeds.toml` to understand what it should do. There are various configuration options available through the Toml specification format. Toml is a more human friendly .JSONesque file. 
+
+the `terraform.py` and the `seeds.toml` files should be placed in a folder with all the configuration files and folders. It will just perform a flat search for these files.
+
+terraform does not copy these "seeds" but rather creates a simlink to them. This makes it easier to store and save all changes to your configuration files, as they will always apply to the original files. However, this also means that the "terraform" folder should not change location.
+
+* Specification & Usage
+The specification below explains the configuration options and specifications in `seeds.toml`
+
+** dotfiles
+
+*** tohome
+    Files placed here will be copied to the default home folder "~/" with a "." prefix.
+*** custom
+    Files in here need to be specified with a destination path as well. They will not have a "." appended to them, unless explicitly indicated.
+**** name
+**** dest
+**** dot_prefix
+
+** applications
+   
+Applications will be checked in the default installation folder.
+Custom paths are supported, and fields with "description" will be 
+printed out to specify any specific installation instructions.
+
+** executables
+   
+TODO
