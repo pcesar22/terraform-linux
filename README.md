@@ -48,3 +48,14 @@ Installed recent version of vim - https://phoenixnap.com/kb/how-to-install-vim-c
 Installed fd with:
 - `sudo yum install cargo rustc`
 - `cargo install fd-find`
+
+Added zsh to `~/.bashrc` so that zsh opens by default
+
+Typed `sudo visudo` and added `<user> ALL=(ALL) ALL` to give root access to <user>.
+  
+Installed zsh-syntax-highlighting:
+```
+cd /etc/yum.repos.d/
+wget https://download.opensuse.org/repositories/shells:zsh-users:zsh-syntax-highlighting/CentOS_7/shells:zsh-users:zsh-syntax-highlighting.repo
+yum install zsh-syntax-highlighting
+```
