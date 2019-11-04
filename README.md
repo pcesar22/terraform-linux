@@ -59,3 +59,4 @@ cd /etc/yum.repos.d/
 wget https://download.opensuse.org/repositories/shells:zsh-users:zsh-syntax-highlighting/CentOS_7/shells:zsh-users:zsh-syntax-highlighting.repo
 yum install zsh-syntax-highlighting
 ```
+Fixed incorrect timezone issue with `timedatectl set-ntp yes` and restarting the computer.
