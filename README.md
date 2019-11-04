@@ -1,10 +1,10 @@
-* Introduction
+# Introduction
 
 Terraform provides a way to speed up the process of conquering a new machine. Right now this is a work in development.
 Just run .install.sh and follow the current setup instructions below.
 
 
-* CentOS install
+# CentOS install
 
 Mounted external hard drive - https://www.rootusers.com/how-to-mount-a-windows-ntfs-disk-in-linux/
 `/dev/sdc1 <mount_folder>  ntfs rw,nosuid,nodev,default_permissions 0 0`
@@ -17,7 +17,7 @@ Installed zsh: `sudo yum install zsh`
 
 Ran `terraform-linux/install.sh`
 
-# Installed exa https://www.tecmint.com/exa-a-replacement-for-ls-command-linux/
+Installed exa https://www.tecmint.com/exa-a-replacement-for-ls-command-linux/
 ```
 curl https://sh.rustup.rs -sSf | sh
 wget -c https://github.com/ogham/exa/releases/download/v0.9.0/exa-linux-x86_64-0.9.0.zip
